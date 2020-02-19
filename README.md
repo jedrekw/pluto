@@ -10,4 +10,3 @@ To run tests install composer.json dependencies, start selenium server and run b
 video showing how tests run: 
 
 https://streamable.com/uiqme
-
