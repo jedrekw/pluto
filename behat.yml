@@ -1,0 +1,16 @@
+default:
+    suites:
+      default:
+        contexts:
+          - FeatureContext
+          - Behat\MinkExtension\Context\MinkContext
+          - PageContext
+
+    extensions:
+      Behat\MinkExtension:
+            selenium2:
+              browser: chrome
+              wd_host: http://localhost:4444/wd/hub
+            files_path: "%paths.base%/features/files/"
+            base_url: "https://pluto-customer-web-app-staging.herokuapp.com/"
+      SensioLabs\Behat\PageObjectExtension: ~
